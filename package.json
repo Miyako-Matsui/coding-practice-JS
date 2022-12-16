@@ -1,0 +1,22 @@
+{
+  "name": "coding-practice-js",
+  "version": "1.0.0",
+  "description": "create test and practice below",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miyako-Matsui/coding-practice-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miyako-Matsui/coding-practice-JS/issues"
+  },
+  "homepage": "https://github.com/Miyako-Matsui/coding-practice-JS#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
