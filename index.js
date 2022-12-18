@@ -10,4 +10,7 @@ function reverseString(word) {
 //   return newString
 // }
 
-module.exports = { reverseString }
+function reverseSentence(sentence) {
+  return sentence.split(' ').reverse().join(' ')
+}
+module.exports = { reverseString, reverseSentence }
