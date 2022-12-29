@@ -4,8 +4,8 @@ create test and practice below
 
 - [×] Reverse a string
 - [×] Reverse a sentence ("bob likes dogs" -> "dogs likes bob")
-- [ ] Find the minimum value in a list
-- [ ] Find the maximum value in a list
+- [×] Find the minimum value in a list
+- [×] Find the maximum value in a list
 - [ ] Calculate a remainder (given a numerator and denominator)
 - [ ] Return distinct values from a list including duplicates (i.e. "1 3 5 3 7 3 1 1 5" -> "1 3 5 7")
 - [ ] Return distinct values and their counts (i.e. the list above becomes "1(3) 3(3) 5(2) 7(1)")
