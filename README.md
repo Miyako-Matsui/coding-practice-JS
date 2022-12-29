@@ -2,7 +2,7 @@
 
 create test and practice below
 
-* Reverse a string
+✅ Reverse a string
 * Reverse a sentence ("bob likes dogs" -> "dogs likes bob")
 * Find the minimum value in a list
 * Find the maximum value in a list
