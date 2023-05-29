@@ -1,4 +1,7 @@
 # coding-practice-JS
+how to strar tests
+npm i
+npm test
 
 create test and practice below
 
