@@ -37,3 +37,11 @@ test('count the unique value in an array', () => {
   const actual = answer.countValues(array)
   expect(actual).toEqual(expected)
 })
+
+test('find the index numbers whose sum is 6 from an array', () => {
+  const array = [3, 3, 4, 10, 18]
+  const target = 6
+  const expected = [0, 1]
+  const actual = answer.findSumTarget(array, target)
+  expect(actual).toEqual(expected)
+})
