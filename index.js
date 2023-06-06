@@ -6,6 +6,7 @@ module.exports = {
   duplicatesValue,
   countValues,
   findSumTarget,
+  checkWin,
 }
 
 function reverseString(word) {
@@ -57,9 +58,29 @@ function findSumTarget(array, target) {
     for (let j = i + 1; j < array.length; j++) {
       if (array[i] + array[j] === target) {
         result.push(i, j)
-        console.log(result)
       }
     }
   }
   return result
+}
+
+function checkWin(game, symbol) {
+  for (let i = 0; i < game.length; i++) {
+    if (game[i][0] === symbol && game[i][1] === symbol && game[i][2] === symbol)
+      return true
+  }
+  for (let j = 0; j < game[0].length; j++) {
+    if (game[0][j] === symbol && game[1][j] === symbol && game[2][j] === symbol)
+      return true
+
+    if (
+      (game[0][0] === symbol &&
+        game[1][1] === symbol &&
+        game[2][2] === symbol) ||
+      (game[1][2] === symbol && game[1][1] === symbol && game[0][2] === symbol)
+    )
+      return true
+  }
+
+  return false
 }

@@ -45,3 +45,16 @@ test('find the index numbers whose sum is 6 from an array', () => {
   const actual = answer.findSumTarget(array, target)
   expect(actual).toEqual(expected)
 })
+
+test('check if a symbol wins in tic-tac-toe game', () => {
+  const game = [
+    ['X', 'X', 'X'],
+    [4, 5, 6],
+    [7, 8, 9],
+  ]
+
+  const symbol = 'X'
+  const expected = true
+  const actual = answer.checkWin(game, symbol)
+  expect(actual).toEqual(expected)
+})
