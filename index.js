@@ -7,6 +7,7 @@ module.exports = {
   countValues,
   findSumTarget,
   checkWin,
+  replace,
 }
 
 function reverseString(word) {
@@ -83,4 +84,9 @@ function checkWin(game, symbol) {
   }
 
   return false
+}
+
+function replace(array, num1, num2) {
+  array.splice(num1, num2, 'red', 'green', 'yellow')
+  return array
 }

@@ -58,3 +58,12 @@ test('check if a symbol wins in tic-tac-toe game', () => {
   const actual = answer.checkWin(game, symbol)
   expect(actual).toEqual(expected)
 })
+
+test('replace specific elements', () => {
+  const array = ['a1', 'a2', 'a3', 'a4', 'a5']
+  const num1 = 0
+  const num2 = 3
+  const expected = ['red', 'green', 'yellow', 'a4', 'a5']
+  const actual = answer.replace(array, num1, num2)
+  expect(actual).toEqual(expected)
+})
