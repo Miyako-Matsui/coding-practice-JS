@@ -67,3 +67,11 @@ test('replace specific elements', () => {
   const actual = answer.replace(array, num1, num2)
   expect(actual).toEqual(expected)
 })
+
+test('add two numbers', () => {
+  const arrayOne = [2, 4, 3]
+  const arrayTwo = [5, 6, 4]
+  const expected = [7, 0, 8]
+  const actual = answer.addTwoNumbers(arrayOne, arrayTwo)
+  expect(actual).toEqual(expected)
+})

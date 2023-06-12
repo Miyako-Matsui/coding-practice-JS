@@ -8,6 +8,7 @@ module.exports = {
   findSumTarget,
   checkWin,
   replace,
+  addTwoNumbers,
 }
 
 function reverseString(word) {
@@ -89,4 +90,12 @@ function checkWin(game, symbol) {
 function replace(array, num1, num2) {
   array.splice(num1, num2, 'red', 'green', 'yellow')
   return array
+}
+
+function addTwoNumbers(arrayOne, arrayTwo) {
+  const reversedOne = [Number(arrayOne.reverse().join(''))]
+  const reversedTwo = [Number(arrayTwo.reverse().join(''))]
+  const sum = [reversedOne, reversedTwo].reduce((a, b) => a[0] + b[0])
+  const result = Array.from(String(sum), Number).reverse()
+  return result
 }
