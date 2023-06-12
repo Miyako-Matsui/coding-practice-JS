@@ -9,6 +9,7 @@ module.exports = {
   checkWin,
   replace,
   addTwoNumbers,
+  reverseNumber,
 }
 
 function reverseString(word) {
@@ -98,4 +99,10 @@ function addTwoNumbers(arrayOne, arrayTwo) {
   const sum = [reversedOne, reversedTwo].reduce((a, b) => a[0] + b[0])
   const result = Array.from(String(sum), Number).reverse()
   return result
+}
+
+function reverseNumber(num) {
+  return (
+    parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
+  )
 }

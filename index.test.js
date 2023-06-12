@@ -75,3 +75,10 @@ test('add two numbers', () => {
   const actual = answer.addTwoNumbers(arrayOne, arrayTwo)
   expect(actual).toEqual(expected)
 })
+
+test('reverse number', () => {
+  const num = -123
+  const expected = -321
+  const actual = answer.reverseNumber(num)
+  expect(actual).toEqual(expected)
+})
