@@ -10,6 +10,7 @@ module.exports = {
   replace,
   addTwoNumbers,
   reverseNumber,
+  nestedArray,
 }
 
 function reverseString(word) {
@@ -105,4 +106,8 @@ function reverseNumber(num) {
   return (
     parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
   )
+}
+
+function nestedArray(arr) {
+  return arr.flat(2)
 }

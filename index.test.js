@@ -82,3 +82,10 @@ test('reverse number', () => {
   const actual = answer.reverseNumber(num)
   expect(actual).toEqual(expected)
 })
+
+test('Nested Array Generator', () => {
+  const arr = [[[6]], [1, 3], []]
+  const expected = [6, 1, 3]
+  const actual = answer.nestedArray(arr)
+  expect(actual).toEqual(expected)
+})
